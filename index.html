@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votación</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            margin: 0;
+            padding-inline: 10px;
+        }
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+        .options {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .options label {
+            display: block;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin: 5px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .options label:hover {
+            background: #e2e6ea;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            padding: 12px;
+            width: 100%;
+            border: none;
+            background: #007bff;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Votación</h2>
+        <form>
+            <div class="options">
+                <label><input type="radio" name="vote" value="opcion1"> Opción 1</label>
+                <label><input type="radio" name="vote" value="opcion2"> Opción 2</label>
+                <label><input type="radio" name="vote" value="opcion3"> Opción 3</label>
+            </div>
+            <button type="submit">Enviar voto</button>
+        </form>
+    </div>
+</body>
+</html>
